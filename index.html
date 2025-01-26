@@ -3,36 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Learning Platform</title>
+    <title>Orisz Group - Student Platform</title>
     <link rel="stylesheet" href="./styles.css">
-    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
+    <header class="site-header">
+        <img src="./logo.png" alt="Orisz Group Logo" class="logo">
+        <h1>Welcome to Orisz Academy Enrollment Page</h1>
+    </header>
+
     <div class="container">
-        <!-- Left: Sign Up Form -->
+        <!-- Signup Form -->
         <div class="form-container">
             <h2>Sign Up</h2>
             <form id="signup-form">
                 <label for="signup-email">Email</label>
-                <input type="email" id="signup-email" required>
-                
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
+
                 <label for="signup-password">Password</label>
-                <input type="password" id="signup-password" required>
-                
+                <div class="password-container">
+                    <input type="password" id="signup-password" placeholder="Enter your password" required>
+                    <span class="toggle-password" onclick="togglePassword('signup-password')">&#128065;</span>
+                </div>
+
+                <label>
+                    <input type="checkbox" id="remember-me-signup"> Remember Me
+                </label>
+
                 <button type="submit">Sign Up</button>
+                <button type="button" id="google-signup-btn">Sign Up with Google</button>
             </form>
         </div>
 
-        <!-- Right: Login Form -->
+        <!-- Login Form -->
         <div class="form-container">
             <h2>Login</h2>
             <form id="login-form">
                 <label for="login-email">Email</label>
-                <input type="email" id="login-email" required>
-                
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+
                 <label for="login-password">Password</label>
-                <input type="password" id="login-password" required>
-                
+                <div class="password-container">
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                    <span class="toggle-password" onclick="togglePassword('login-password')">&#128065;</span>
+                </div>
+
+                <label>
+                    <input type="checkbox" id="remember-me-login"> Remember Me
+                </label>
+
                 <button type="submit">Login</button>
             </form>
         </div>
