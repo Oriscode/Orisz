@@ -3,51 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orisz - Digital Solutions Provider</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>A static website</title>
+
+    <!-- include the widget -->
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo"><a href="index.html">Orisz</a></div>
-        <nav>
-            <div class="hamburger" id="hamburger">&#9776;</div>
-            <ul id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h1>Empowering Your Business with Innovative Digital Solutions</h1>
-            <a href="contact.html" class="cta-button">Get Started</a>
-        </section>
-        <section class="services-overview">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>Web Development</h3>
-                <p>Crafting responsive and engaging websites that drive results.</p>
-            </div>
-            <div class="service">
-                <h3>Mobile App Creation</h3>
-                <p>Building intuitive mobile applications for iOS and Android.</p>
-            </div>
-            <div class="service">
-                <h3>Custom Software Solutions</h3>
-                <p>Developing tailored software to meet your unique business challenges.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Orisz. All rights reserved.</p>
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+    <!-- Add a menu:
+    Log in / Sign up - when the user is not logged in
+    Username / Log out - when the user is logged in
+    -->
+    <div data-netlify-identity-menu></div>
+
+    <!-- Add a simpler button:
+    Simple button that will open the modal.
+    -->
+    <div data-netlify-identity-button>Login with Netlify Identity</div>
+    <script src="./scripts/auth.js"></script>
 </body>
 </html>
