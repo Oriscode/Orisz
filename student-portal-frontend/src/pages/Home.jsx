@@ -12,7 +12,7 @@ const Home = () => {
           <section className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
             <h1 className="text-4xl font-bold text-blue-600 mb-4">Welcome to Orisz Group</h1>
             <p className="text-lg text-gray-700 mb-8 text-center">
-              We provide the best services for your business.
+              We provide the best services for your business
             </p>
             <button className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
              Learn More
